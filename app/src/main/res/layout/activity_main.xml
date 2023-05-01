@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#08ad7f">
+
+    <EditText
+        android:id="@+id/editEmail"
+        style="@style/EditText"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/editSenha"
+        style="@style/EditText"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_below="@id/editEmail"
+        android:hint="Senha"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSenha"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="LOGIN"m
+        android:textColor="#08ad7f"
+        android:backgroundTint="#dadada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ainda não é cadastrado? Cadastre-se"
+        android:textColor="@color/white"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+    <ImageView
+        android:id="@+id/imageHelp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/help"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu sua senha?"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageHelp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="12dp"/>
+
+
+
+</RelativeLayout>
